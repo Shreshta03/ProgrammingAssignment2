@@ -9,7 +9,7 @@
   {                    
   inverse1 <<- NULL                        
   get <- function()                         
-  setinverse <- function(inverse) inv <<- inverse  
+  setinverse <- function(inverse) invers1 <- inverse  
   getinverse <- function() inverse1                     
   list(set = set, get = get, setinverse = setinverse)  
   }
