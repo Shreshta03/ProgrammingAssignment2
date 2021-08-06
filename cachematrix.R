@@ -1,28 +1,25 @@
-#This function is the inverse of the matrix that has given
-#this function will retrieve the value of the inverse matrix that has given
+#Created a function Matrix which will compute or solve the inverse of the matrix
+#This function will retrieve the value of inverse matrix
 
-#This function is the inverse of the matrix
-
-  makeCacheMatrix <- function(x = numeric()) {
-  inverser1 <- NULL                          
-  set <- function(y) 
-  {                    
-  inverse1 <<- NULL                        
-  get <- function()                         
-  setinverse <- function(inverse) invers1 <- inverse  
-  getinverse <- function() inverse1                     
-  list(set = set, get = get, setinverse = setinverse)  
+#created a function Matrix which will compute or solve the inverse of the matrix
+makeCacheMatrix <- function(x=numeric()){
+inverse1 <- NULL
+set <- function(p) {
+  p <<- q
+  inverse1 <<- NULL
+}
+get <- function() p
+  setInverse <- function(Inverse) inverse1 <<- Inverse
+  getInverse <- function() inverse1
+  list_data = list(get=get,set=set,setInverse=setInverse,getInverse=getInverse)
+}
+#This function will retrieve the value of inverse matrix
+CacheSolve <- function(x, ){
+  inverse1 <-p$getInverse()
+  if(!is.null(inverse1)) {
+    print(paste("Cached data"))
   }
-  #This function will retrieve the value of the inverse matrix.
-  data <- x$get()
-  inverse1 <- solve(data)
-  x$setinverse(inverse1)
-  cacheSolve <- function(x,y) 
-  {
-   inverse1 <- x$getinverse()
-   if(!is.null(inv)) {
-   message("cache data")
-   return(inverse1)
-    }
-              
-  }
+  vardata <- p$get()
+  inverse1 <- solve(vardata,)
+  p$setInverse(inverse1)
+}
